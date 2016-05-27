@@ -1,6 +1,6 @@
 {
   "name": "tippiq-protractor-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility functions to help writing Protractor tests",
   "repository": {
     "type": "git",
