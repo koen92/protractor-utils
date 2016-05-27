@@ -13,4 +13,16 @@ describe('the protractor utilities', () => {
       assert.isFunction(protractorUtils.waitUntilURLContains);
     });
   });
+
+  describe('the wait until url is loaded helper', () => {
+    it('should exist', () => {
+      assert.isFunction(protractorUtils.waitUntilURLIsLoaded);
+    });
+  });
+
+  describe('the get loacal storage value helper', () => {
+    it('should exist', () => {
+      assert.isFunction(protractorUtils.getLocalstorageValue);
+    });
+  });
 });
