@@ -4,4 +4,4 @@ build:
     - npm-install
     - npm-test
     - npm-run
-      script: lint
+        script: lint
