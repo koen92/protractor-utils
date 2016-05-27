@@ -1,5 +1,3 @@
-'use strict';
-
 const assert = require('chai').assert;
 const protractorUtils = require('./index');
 

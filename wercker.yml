@@ -3,3 +3,5 @@ build:
   steps:
     - npm-install
     - npm-test
+    - npm-run
+      script: lint

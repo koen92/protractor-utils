@@ -1,15 +1,16 @@
-'use strict';
-
 const hotkeys = require('protractor-hotkeys');
 
-module.exports.hideReduxDevTools = function () {
+function hideReduxDevTools() {
   hotkeys.trigger('ctrl+h');
-};
+}
 
-module.exports.waitUntilURLContains = function (browser, text, timeout) {
-  timeout = timeout || 10000;
+function waitUntilURLContains(browser, text, timeout) {
+  const specTimeout = timeout || 10000;
 
   return browser.driver
       .wait(() => browser.driver.getCurrentUrl()
-      .then(currentUrl => currentUrl.includes(text)), timeout);
-};
+      .then(currentUrl => currentUrl.includes(text)), specTimeout);
+}
+
+module.exports.hideReduxDevTools = hideReduxDevTools;
+module.exports.waitUntilURLContains = waitUntilURLContains;
