@@ -4,4 +4,5 @@ build:
     - npm-install
     - npm-test
     - maxon/npm-run:
+        name: lint
         script: lint
