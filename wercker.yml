@@ -3,5 +3,5 @@ build:
   steps:
     - npm-install
     - npm-test
-    - npm-run
+    - maxon/npm-run:
         script: lint
