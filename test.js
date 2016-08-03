@@ -20,7 +20,7 @@ describe('the protractor utilities', () => {
     });
   });
 
-  describe('the get loacal storage value helper', () => {
+  describe('the get local storage value helper', () => {
     it('should exist', () => {
       assert.isFunction(protractorUtils.getLocalstorageValue);
     });
