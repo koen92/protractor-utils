@@ -10,10 +10,6 @@ node {
       sh "node -v"
       sh "npm -v"
 
-    stage 'Checkout'
-
-      checkout scm
-
     stage 'NPM install'
       sh "npm install"
 
