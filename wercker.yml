@@ -1,8 +1,0 @@
-box: node:4.4.5
-build:
-  steps:
-    - npm-install
-    - npm-test
-    - maxon/npm-run:
-        name: lint
-        script: lint
